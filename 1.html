@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青少年科学体重管理</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background-color: #f5f9ff;
+            margin: 0;
+            padding: 20px;
+        }
+        .poster {
+            width: 800px;
+            margin: 0 auto;
+            background-color: #e6f2ff;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 3px solid #4da6ff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0066cc;
+            background-color: #cce6ff;
+            padding: 15px;
+            border-radius: 10px;
+            border-bottom: 3px solid #4da6ff;
+        }
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .subtitle {
+            font-size: 18px;
+            margin: 10px 0 0;
+        }
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4da6ff;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 0;
+            border-bottom: 2px dashed #4da6ff;
+            padding-bottom: 5px;
+        }
+        .pillars {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .pillar {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .pillar h3 {
+            color: #0066cc;
+            text-align: center;
+            background-color: #e6f2ff;
+            padding: 8px;
+            border-radius: 5px;
+            margin-top: 0;
+        }
+        .do, .dont {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .do {
+            background-color: #e6ffe6;
+            border-left: 3px solid #2ecc71;
+        }
+        .dont {
+            background-color: #ffe6e6;
+            border-left: 3px solid #e74c3c;
+        }
+        .recipe {
+            background-color: #fff9e6;
+            border-radius: 5px;
+            padding: 10px;
+            border-left: 3px solid #ffcc00;
+        }
+        .recipe-item {
+            margin-bottom: 5px;
+        }
+        .warning {
+            background-color: #fff2e6;
+            border-radius: 5px;
+            padding: 15px;
+            border-left: 3px solid #ff9933;
+            font-weight: bold;
+        }
+        .icon {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-btn {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #004d99;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster" id="poster">
+        <div class="header">
+            <h1>🏆 青少年科学减重原则</h1>
+            <p class="subtitle">「不节食、不极端、不盲目」</p >
+        </div>
+        
+        <div class="section">
+            <p><span class="icon">⚠️</span> 避免：过度节食/减肥药/网红食谱</p >
+            <p><span class="icon">✅</span> 目标：体脂率下降而非单纯减重</p >
+        </div>
+        
+        <h2>🔍 科学减重三支柱</h2>
+        <div class="pillars">
+            <div class="pillar">
+                <h3>1️⃣ 营养优化（吃对≠吃少）</h3>
+                <div class="do">
+                    <p><strong>必须吃够：</strong></p >
+                    <p>✔️ 蛋白质（鸡蛋/鱼/豆制品）→ 维持肌肉</p >
+                    <p>✔️ 钙+维生素D（牛奶/绿叶菜）→ 保护骨骼</p >
+                    <p>✔️ 复合碳水（燕麦/红薯/杂粮）→ 稳定血糖</p >
+                </div>
+                <div class="dont">
+                    <p><strong>需要减少：</strong></p >
+                    <p>✖️ 含糖饮料（换成无糖茶/柠檬水）</p >
+                    <p>✖️ 油炸食品（用空气炸锅替代深炸）</p >
+                    <p>✖️ 精制糖（蛋糕/奶茶每周≤1次）</p >
+                </div>
+            </div>
+            
+            <div class="pillar">
+                <h3>2️⃣ 运动策略（燃脂+塑形）</h3>
+                <p><strong>基础方案：</strong></p >
+                <p>▶️ 每天60分钟中高强度运动（跳绳/篮球/游泳）</p >
+                <p>▶️ 每周3次力量训练（自重深蹲/俯卧撑/弹力带）</p >
+                <p><strong>碎片化运动：</strong></p >
+                <p>• 课间爬楼梯 • 睡前平板支撑1分钟×3组</p >
+            </div>
+            
+            <div class="pillar">
+                <h3>3️⃣ 生活习惯调整</h3>
+                <p><span class="icon">🛌</span> 睡眠优先：保证7-9小时（缺眠易引发暴食）</p >
+                <p><span class="icon">📵</span> 减少屏幕时间：每坐1小时起身活动5分钟</p >
+                <p><span class="icon">🧂</span> 控盐：避免水肿（每日盐≤5g）</p >
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>⚠️ 家长须知</h2>
+            <p>• 不称体重：改为每月测量腰围/体脂率</p >
+            <p>• 心理支持：不批判体型，关注健康行为</p >
+            <p>• 就医信号：BMI≥24或突然体重骤降</p >
+        </div>
+        
+        <div class="section">
+            <h2>🌱 健康减重食谱示例</h2>
+            <div class="recipe">
+                <p class="recipe-item">- 早餐：煮鸡蛋1个+全麦面包2片+牛奶250ml</p >
+                <p class="recipe-item">- 午餐：杂粮饭1拳+清蒸鱼+西兰花</p >
+                <p class="recipe-item">- 加餐：无糖酸奶100g+苹果1个</p >
+                <p class="recipe-item">- 晚餐：番茄豆腐汤+凉拌鸡胸肉</p >
+            </div>
+        </div>
+        
+        <div class="warning">
+            <p>📌 关键提醒：青春期减重需在医生/营养师指导下进行，严禁盲目模仿成人减肥方法！</p >
+        </div>
+    </div>
+    
+    <div class="btn-container">
+        <button class="download-btn" onclick="downloadPoster()">下载海报</button>
+    </div>
+
+    <script>
+        function downloadPoster() {
+            // 在实际应用中，这里需要添加将海报转换为图片并下载的代码
+            // 可以使用html2canvas等库实现
+            alert('下载功能需要在实际网页中实现，这里仅作演示。\n\n您可以将此HTML代码保存为网页，或截图使用。');
+        }
+    </script>
+</body>
+</html>
